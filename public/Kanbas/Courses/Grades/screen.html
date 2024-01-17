@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <table>
+        <tbody>
+          <tr>
+            <td>
+                <ul>
+                    <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+                    <li><a href="#">Calendar</a></li>
+                   <li><a href="#">Inbox</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Studio</a></li>
+                    <li><a href="#">Commons</a></li>
+                    <li><a href="#">Help</a></li>
+                  </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="#">Settings</a></li>
+                  </ul>
+            </td>
+            <td>
+                <select id="gradebook">
+                    <option value="gradebook">Gradebook</option>
+                </select>
+                <button type="button">Import</button>
+                <select id="export">
+                    <option value="export">Export</option>
+                </select>
+                <button type="button">Configure</button>
+                <br/>
+            
+                <label for="search-students">
+                    <h1>Student Names</h1>
+                </label>
+                <br/>
+                <input id="search-students" placeholder="Search Students"/>
+                <br/>
+            
+                <label for="search-assignments">
+                    <h1>Assignment Names</h1>
+                </label>
+                <br/>
+                <input id="search-assignments" placeholder="Search Assignments"/>
+                <br/>
+                <br/>
+                <button type="button">Apply Filters</button>
+            
+                <table border="1">
+                    <tr>
+                      <th>Student Name</th>
+                      <th>A1 SETUP <br/>Out of 100</th>
+                      <th>A2 HTML <br/>Out of 100</th>
+                      <th>A3 CSS <br/>Out of 100</th>
+                      <th>A4 BOOTSTRAP <br/>Out of 100</th>
+                      <th>A5 JAVASCRIPT <br/>Out of 100</th>
+                      <th>A6 REACT <br/>Out of 100</th>
+                      <th>A7 REDUX <br/>Out of 100</th>
+                      <th>A8 NODE <br/>Out of 100</th>
+                      <th>A9 MONGO <br/>Out of 100</th>
+                    </tr>
+                    <tr>
+                      <td>Alice Wonderland</td>
+                      <td>98</td>
+                      <td>89</td>
+                      <td>87</td>
+                      <td>90</td>
+                      <td>89</td>
+                      <td>94</td>
+                      <td>88</td>
+                      <td>87</td>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Princess Leia</td>
+                        <td>98</td>
+                        <td>80</td>
+                        <td>87</td>
+                        <td>86</td>
+                        <td>100</td>
+                        <td>94</td>
+                        <td>
+                            <input type="number" value="85"/>
+                        </td>
+                        <td>84</td>
+                        <td>92</td>
+                    </tr>
+                    <tr>
+                        <td>Luke Skywalker</td>
+                        <td>
+                            <input type="number" value="99"/>
+                        </td>
+                        <td>88</td>
+                        <td>97</td>
+                        <td>82</td>
+                        <td>96</td>
+                        <td>93</td>
+                        <td>95</td>
+                        <td>100</td>
+                        <td>93</td>
+                    </tr>
+                    <tr>
+                        <td>Han Solo</td>
+                        <td>83</td>
+                        <td>99</td>
+                        <td>94</td>
+                        <td>98</td>
+                        <td>86</td>
+                        <td>85</td>
+                        <td>
+                            <input type="number" value="86"/>
+                        </td>
+                        <td>80</td>
+                        <td>84</td>
+                    </tr>
+                    <tr>
+                        <td>Lando Calresian</td>
+                        <td>83</td>
+                        <td>
+                            <input type="number" value="92"/>
+                        </td>
+                        <td>80</td>
+                        <td>80</td>
+                        <td>92</td>
+                        <td>92</td>
+                        <td>94</td>
+                        <td>87</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Boba Fet</td>
+                        <td>85</td>
+                        <td>89</td>
+                        <td>94</td>
+                        <td>83</td>
+                        <td>83</td>
+                        <td>84</td>
+                        <td>91</td>
+                        <td>87</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Darth Vader</td>
+                        <td>81</td>
+                        <td>81</td>
+                        <td>
+                            <input type="number" value="96"/>
+                        </td>
+                        <td>80</td>
+                        <td>89</td>
+                        <td>88</td>
+                        <td>82</td>
+                        <td>80</td>
+                        <td>82</td>
+                    </tr>
+                    <tr>
+                        <td>Obi-Wan Kenobi</td>
+                        <td>
+                            <input type="number" value="85"/>
+                        </td>
+                        <td>99</td>
+                        <td>87</td>
+                        <td>82</td>
+                        <td>88</td>
+                        <td>83</td>
+                        <td>88</td>
+                        <td>92</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>R2-D2</td>
+                        <td>81</td>
+                        <td>
+                            <input type="number" value="92"/>
+                        </td>
+                        <td>
+                            <input type="number" value="82"/>
+                        </td>
+                        <td>86</td>
+                        <td>83</td>
+                        <td>
+                            <input type="number" value="84"/>
+                        </td>
+                        <td>98</td>
+                        <td>85</td>
+                        <td>96</td>
+                    </tr>
+                    <tr>
+                        <td>C-3PO</td>
+                        <td>94</td>
+                        <td>98</td>
+                        <td>83</td>
+                        <td>83</td>
+                        <td>100</td>
+                        <td>96</td>
+                        <td>96</td>
+                        <td>85</td>
+                        <td>87</td>
+                    </tr>
+                    <tr>
+                        <td>Yoda</td>
+                        <td>80</td>
+                        <td>89</td>
+                        <td>99</td>
+                        <td>89</td>
+                        <td>96</td>
+                        <td>85</td>
+                        <td>96</td>
+                        <td>92</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>Admiral Ackbar</td>
+                        <td>82</td>
+                        <td>88</td>
+                        <td>95</td>
+                        <td>100</td>
+                        <td>
+                            <input type="number" value="93"/>
+                        </td>
+                        <td>98</td>
+                        <td>85</td>
+                        <td>87</td>
+                        <td>99</td>
+                    </tr>
+                  </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <table>
+        <tbody>
+          <tr>
+            <td>
+                <ul>
+                    <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+                    <li><a href="#">Calendar</a></li>
+                   <li><a href="#">Inbox</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Studio</a></li>
+                    <li><a href="#">Commons</a></li>
+                    <li><a href="#">Help</a></li>
+                  </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="#">Settings</a></li>
+                  </ul>
+            </td>
+            <td>
+                <input id="search-assignments" placeholder="Search for Assignments"/>
+                <button type="button">Group</button>
+                <button type="Assignment">Assignment</button>
+                <select id="edit-assignments-options">
+                    <option value="edit-assignment-dates">Edit Assignment Dates</option>
+                    <option value="assignment-groups-weight">Assignment Groups Weight</option>
+                    <option value="gradescope">Gradescope 1.3</option>
+                    <option value="commons-favorites">Commons Favorites</option>
+                </select>
+                <hr>
+
+                <b>ASSIGNMENTS 40% of Total</b>
+                <select id="edit-assignments-group-assignments">
+                    <option value="edit">Edit</option>
+                    <option value="speed-grader">Speed Grader</option>
+                    <option value="duplicate">Duplicate</option>
+                    <option value="delete">Delete</option>
+                    <option value="move-to">Move To...</option>
+                    <option value="send-to">Send To...</option>
+                    <option value="copy-to">Copy To...</option>
+                    <option value="share-to-commons">Share to Commons</option>
+                </select>
+                <ul>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A1 - ENV + HTML</a>
+                        <br/>
+                        <a href="#">Multiple Modules</a> | Not Available yet
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A2 - CSS + BOOTSTRAP</a>
+                        <br/>
+                        <a href="#">Multiple Modules</a> | Not Available yet
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A3 - JS + REACT</a>
+                        <br/>
+                        <a href="#">Multiple Modules</a> | Not Available yet
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A4 - STATE + REDUX</a>
+                        <br/>
+                        <a href="#">Multiple Modules</a> | Not Available yet
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A5 - NODE + SESSION</a>
+                        <br/>
+                        <a href="#">Multiple Modules</a> | Not Available yet
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A6 - MONGO + MONGOOSE</a>
+                        <br/>
+                        <a href="#">Multiple Modules</a> | Not Available yet
+                    </li>
+                </ul>
+
+                <b>QUIZZES 10% of Total</b>
+                <select id="edit-assignments-group-quizzes">
+                    <option value="edit">Edit</option>
+                    <option value="speed-grader">Speed Grader</option>
+                    <option value="duplicate">Duplicate</option>
+                    <option value="delete">Delete</option>
+                    <option value="move-to">Move To...</option>
+                    <option value="send-to">Send To...</option>
+                    <option value="copy-to">Copy To...</option>
+                    <option value="share-to-commons">Share to Commons</option>
+                </select>
+                <ul>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q1 - HTML</a>
+                        <br/>
+                        <a href="#">Multiple Modules</a> | Not Available yet
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q2 - CSS</a>
+                        <br/>
+                        <a href="#">Multiple Modules</a> | Not Available yet
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q3 - JS,ES6</a>
+                        <br/>
+                        <a href="#">Multiple Modules</a> | Not Available yet
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q4 - NODE</a>
+                        <br/>
+                        <a href="#">Multiple Modules</a> | Not Available yet
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q5 - MONGO</a>
+                        <br/>
+                        <a href="#">Multiple Modules</a> | Not Available yet
+                    </li>
+                </ul>
+
+                <b>EXAMS 20% of Total</b>
+                <select id="edit-assignments-group-exams">
+                    <option value="edit">Edit</option>
+                    <option value="speed-grader">Speed Grader</option>
+                    <option value="duplicate">Duplicate</option>
+                    <option value="delete">Delete</option>
+                    <option value="move-to">Move To...</option>
+                    <option value="send-to">Send To...</option>
+                    <option value="copy-to">Copy To...</option>
+                    <option value="share-to-commons">Share to Commons</option>
+                </select>
+                <ul>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Midterm</a>
+                        <br/>
+                        <a href="#">Multiple Modules</a> | Not Available yet
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Final</a>
+                        <br/>
+                        <a href="#">Multiple Modules</a> | Not Available yet
+                    </li>
+                </ul>
+
+                <b>PROJECT 30% of Total</b>
+                <select id="edit-assignments-group-projects">
+                    <option value="edit">Edit</option>
+                    <option value="speed-grader">Speed Grader</option>
+                    <option value="duplicate">Duplicate</option>
+                    <option value="delete">Delete</option>
+                    <option value="move-to">Move To...</option>
+                    <option value="send-to">Send To...</option>
+                    <option value="copy-to">Copy To...</option>
+                    <option value="share-to-commons">Share to Commons</option>
+                </select>
+                <ul>
+                    <li>
+                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Project</a>
+                        <br/>
+                        <a href="#">Multiple Modules</a> | Not Available yet
+                    </li>
+                </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </body>
+</html>
