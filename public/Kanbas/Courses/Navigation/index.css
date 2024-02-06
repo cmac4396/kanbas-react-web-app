@@ -36,3 +36,70 @@
     float: right;
     color: #677179;
 }
+.wd-course-nav-mobile .wd-active {
+    font-weight: bold;
+}
+.wd-course-nav-mobile-option {
+    display: flex;
+    flex-flow: row;
+    margin: 0px calc(-0.75rem);
+}
+
+  
+  .wd-course-modules-header {
+    margin: 0 24px;
+  }
+  
+  .wd-course-content-header {
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    margin: 0 24px;
+    border-bottom: 1px solid #c7cdd1;
+  }
+  
+  .wd-course-content-header > button {
+    background: white;
+    color: #b52828;
+    border: white;
+    line-height: 20px;
+    margin-right: 12px;
+    width: 36px;
+    height: 30px;
+    padding: 0px;
+  }
+  
+
+  .wd-course-nav-crumbs {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  
+  .wd-course-nav-crumbs > ul {
+    list-style: none;
+    padding: 0px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0px;
+  }
+  
+  .wd-course-nav-crumbs > ul > li {
+    text-align: left;
+    white-space-collapse: collapse;
+    vertical-align: top;
+    white-space: nowrap;
+    display: inline-block;
+    color: #2d3b45;
+  }
+  
+  .wd-course-nav-crumbs > ul > li > a {
+    text-decoration: none;
+    color: #b52828;
+  }
+  
+  .wd-course-nav-crumbs > ul > li > a:hover{
+    text-decoration: underline;
+  }

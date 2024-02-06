@@ -28,45 +28,13 @@
     <link href="/Kanbas/styles.css" rel="stylesheet"/>
     <link href="/Kanbas/Navigation/index.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
-    <title>Assignments: CS4550 30083 Web Development SEC 01 Spring 2024 [BOS-1-TR]</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>CS4550 30083 Web Development SEC 01 Spring 2024 [BOS-1-TR]</title>
   </head>
   <body>
-    <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet"/>
-    <link href="/Kanbas/styles.css" rel="stylesheet"/>
-    <link href="/Kanbas/Navigation/index.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
-    <title>React App</title>
-  </head>
-  <body>
-    <div class="sidenav wd-kanbas-sidenav">
+    <div class="sidenav wd-kanbas-sidenav d-none d-md-block">
         <ul class="wd-kanbas-navigation">
             <li>
               <a href="http://northeastern.edu">
@@ -101,79 +69,278 @@
             <li><a href="#"><i class="fa-regular fa-circle-question"></i><br/> Help</a></li>
           </ul>
     </div>
-    <div class="main">
-        <div class="row">
-          <div class="wd-course-nav">
-            <span class="wd-kanbas-courses-nav-term ellipsis">202430_1 Spring 2024 Semester Full Term</span>
-            <nav>
-                <ul class="wd-navigation">
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                <li><a href="#">Modules</a></li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li class="wd-active"><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li>
-                    <a href="#">
-                    Discussions
-                    <i class="fa-regular fa-eye-slash"></i>
+    <div class="collapse collapse-horizontal wd-kanbas-nav-mobile mobile-kanbas-nav-collapse" id="wd-kanbas-nav-mobile" >
+        <div class="sidenav">
+            <span class="wd-kanbas-nav-mobile-header">
+                <span class="wd-kanbas-nav-mobile-header-info">
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <img src="/images/mobile-logo.png">
                     </a>
+                </span>
+                <span class="wd-kanbas-nav-mobile-header-close">
+                    <button data-bs-toggle="collapse" data-bs-target=".mobile-kanbas-nav-collapse" aria-expanded="false" aria-controls=".mobile-kanbas-nav-collapse">
+                        <i class="fa-solid fa-2x fa-xmark"></i>
+                    </button>
+                </span>
+            </span>
+            <ul>
+                <li>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                      <i class="fa fa-tachometer"></i> Dashboard</a>
+                  </li>
+                <li>
+                  <a href="/Kanbas/Account/Profile/screen.html">
+                      <i class="fa-solid fa-user"></i>
+                    Account
+                  </a>
                 </li>
                 <li>
-                    <a href="#">
-                    Announcements
-                    <i class="fa-regular fa-eye-slash"></i>
-                    </a>
+                  <a href="/Kanbas/Courses/Home/screen.html">
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                  </a>
                 </li>
-                <li>
-                    <a href="#">
-                    Pages
-                    <i class="fa-regular fa-eye-slash"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    Files
-                    <i class="fa-regular fa-eye-slash"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    Rubrics
-                    <i class="fa-regular fa-eye-slash"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    Outcomes
-                    <i class="fa-regular fa-eye-slash"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    Collaborations
-                    <i class="fa-regular fa-eye-slash"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    Syllabus
-                    <i class="fa-regular fa-eye-slash"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    Settings
-                    <i class="fa-regular fa-eye-slash"></i>
-                    </a>
-                </li>
-                </ul>
-            </nav>
+                <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+                <li><a href="#"><i class="fa-solid fa-inbox"></i> Inbox</a></li>
+                <li><a href="#"><i class="fa-regular fa-clock"></i> History</a></li>
+                <li><a href="#"><i class="fa-solid fa-display"></i> Studio</a></li>
+                <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Commons</a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-question"></i> Help</a></li>
+              </ul> 
         </div>
-            <div class="col-6">
+    </div>
+    <div class= "wd-nav-mobile-header d-flex d-md-none collapse show mobile-kanbas-nav-collapse">
+        <button data-bs-toggle="collapse" data-bs-target=".mobile-kanbas-nav-collapse" aria-expanded="false" aria-controls=".mobile-kanbas-nav-collapse">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="wd-course-nav-mobile" data-bs-toggle="collapse" data-bs-target=".mobile-course-nav-collapse" aria-expanded="false" aria-controls=".mobile-course-nav-collapse">
+            <div>CS4550.30083.202430</div>
+            <div>Assignments</div>
+        </a>
+        <button data-bs-toggle="collapse" data-bs-target=".mobile-course-nav-collapse" aria-expanded="false" aria-controls=".mobile-course-nav-collapse">
+            <i class="fa-solid fa-chevron-down collapse show mobile-course-nav-collapse"></i>
+            <i class="fa-solid fa-xmark collapse mobile-course-nav-collapse"></i>
+        </button>  
+    </div>
+    <nav class= "wd-course-nav-mobile collapse mobile-course-nav-collapse d-md-none">
+        <span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="/Kanbas/Courses/Home/screen.html">
+                    <i class="fa-solid fa-house"></i>
+                  Home
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="/Kanbas/Courses/Modules/screen.html">
+                    <i class="fa-solid fa-diagram-project"></i>
+                  Modules
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-plug"></i>
+                  Piazza
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-plug"></i>
+                  Zoom Meetings
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option wd-active">
+                <a href="/Kanbas/Courses/Assignments/screen.html">
+                    <i class="fa-solid fa-file-pen"></i>
+                  Assignments
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="">
+                    <i class="fa-solid fa-rocket"></i>
+                  Quizzes
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="/Kanbas/Courses/Grades/screen.html">
+                    <i class="fa-solid fa-book"></i>
+                  Grades
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-users"></i>
+                  People
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                  Panopto Video
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-comments"></i>
+                  Discussion
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-bullhorn"></i>
+                  Announcements
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-newspaper"></i>
+                  Pages
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-regular fa-folder"></i>
+                  Files
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-table"></i>
+                  Rubrics
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-regular fa-comment-dots"></i>
+                  Outcomes
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-regular fa-comment"></i>
+                  Collaborations
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-receipt"></i>
+                  Syllabus
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-plug"></i>
+                  Progress Reports (EAB Navigate)
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-sliders"></i>
+                  Settings
+                </a>
+            </span>
+        </span>
+    </nav>
+    
+    <div class="main collapse show mobile-kanbas-nav-collapse">
+        <div class= "wd-course-content-header d-none d-md-flex">
+            <button data-bs-toggle="collapse" data-bs-target="#wd-course-nav" aria-expanded="false" aria-controls="#wd-course-nav">
+                <i class="fa-solid fa-2x fa-bars"></i>
+            </button>
+            <div class="wd-course-nav-crumbs">
+                <ul>
+                    <li>
+                        <a class="wd-emph-href" href="/Kanbas/Courses/Home/screen.html">CS4550.30083.202430</a>
+                    </li>
+                    > Assignments
+                </ul>
+            </div>
+            <div>
+                <button class="btn">
+                    <i class="fa-solid fa-glasses"></i>
+                    Student View
+                </button>
+            </div>
+        </div>
+        <div class="d-block d-md-flex">
+            <div class="wd-course-nav collapse collapse-horizontal d-none d-md-block show" id="wd-course-nav">
+                <span class="wd-kanbas-courses-nav-term ellipsis">202430_1 Spring 2024 Semester Full Term</span>
+                <nav>
+                    <ul class="wd-navigation">
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                    <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li class="wd-active"><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li>
+                        <a href="#">
+                        Discussions
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Announcements
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Pages
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Files
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Rubrics
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Outcomes
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Collaborations
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Syllabus
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Settings
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    </ul>
+                </nav>
+                </div>
+            <div class="flex-fill wd-course-main-content">
               <input id="search-assignments" placeholder="Search for Assignments"/>
               <button type="button">Group</button>
               <button type="Assignment">Assignment</button>
@@ -310,14 +477,12 @@
                       <a href="#">Multiple Modules</a> | Not Available yet
                   </li>
               </ul>
+          
+                
             </div>
         </div>
     </div>
 
       
-  </body>
-</html>
-
-
   </body>
 </html>
