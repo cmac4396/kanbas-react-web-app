@@ -24,60 +24,86 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/Kanbas/styles.css" rel="stylesheet"/>
+    <link href="/Kanbas/Navigation/index.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <title>User Profile</title>
   </head>
   <body>
-    <table>
-        <tbody>
-          <tr>
-            <td>
-                <ul>
-                    <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                   <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                  </ul>
-            </td>
-            <td>
-                <ul>
-                    <li><a href="#">Notifications</a></li>
-                    <li><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">ePortfolios</a></li>
-                    <li><a href="#">Shared Content</a></li>
-                    <li><a href="#">The Hub</a></li>
-                    <li><a href="#">Qwickly Course Tools</a></li>
-                    <li><a href="#">Global Announcements</a></li>
-                  </ul>
-            </td>
-            <td>
-                <h3>Jose Annunziato's Profile</h3>
-                <hr>
-                <a href="/Kanbas/Account/Profile/Edit/screen.html">
-                    <button style="float:right;">&#9998 Edit Profile</button>
-                </a>
-                <h1>Jose Annunziato</h1>
-                <h2>Contact</h2>
-                <p>
-                    No registered services, you can add some on the 
-                    <a href="#">settings</a>
-                    page.
-                </p>
-                <h2>Biography</h2>
-                <p>
-                    Faculty, Software Engineer, AI, Space, and renewables enthusiast.
-                </p>
-                <h2>Links</h2>
-                <p><a href="https://www.youtube.com">Youtube</a></p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="sidenav wd-kanbas-sidenav">
+        <ul class="wd-kanbas-navigation">
+            <li>
+              <a href="http://northeastern.edu">
+                <img src="/Kanbas/Navigation/Northeastern-University-Logo.png"
+                  class="wd-kanbas-navigation-icon">
+              </a>
+            </li>
+            <li class="wd-active">
+              <a href="/Kanbas/Account/Profile/screen.html">
+                <div class="container wd-kanbas-navigation-account-icon">
+                  <img src="/Kanbas/Navigation/profile-icon.jpeg" class="wd-kanbas-navigation-profile">
+                  <i class="fa-regular fa-circle "></i>
+                </div>
+                Account
+              </a>
+            </li>
+            <li>
+              <a href="/Kanbas/Dashboard/screen.html">
+                <i class="fa fa-tachometer"></i> Dashboard</a>
+            </li>
+            <li>
+              <a href="/Kanbas/Courses/Home/screen.html">
+                <i class="fa-solid fa-book"></i>
+                Courses
+              </a>
+            </li>
+            <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+            <li><a href="#"><i class="fa-solid fa-inbox"></i> Inbox</a></li>
+            <li><a href="#"><i class="fa-regular fa-clock"></i> History</a></li>
+            <li><a href="#"><i class="fa-solid fa-display"></i> Studio</a></li>
+            <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Commons</a></li>
+            <li><a href="#"><i class="fa-regular fa-circle-question"></i><br/> Help</a></li>
+          </ul>
+    </div>
+    <div class="main">
+        <div class="row">
+            <div class="col-6">
+              <ul>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">ePortfolios</a></li>
+                <li><a href="#">Shared Content</a></li>
+                <li><a href="#">The Hub</a></li>
+                <li><a href="#">Qwickly Course Tools</a></li>
+                <li><a href="#">Global Announcements</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <h3>Jose Annunziato's Profile</h3>
+              <hr>
+              <a href="/Kanbas/Account/Profile/Edit/screen.html">
+                  <button style="float:right;">&#9998 Edit Profile</button>
+              </a>
+              <h1>Jose Annunziato</h1>
+              <h2>Contact</h2>
+              <p>
+                  No registered services, you can add some on the 
+                  <a href="#">settings</a>
+                  page.
+              </p>
+              <h2>Biography</h2>
+              <p>
+                  Faculty, Software Engineer, AI, Space, and renewables enthusiast.
+              </p>
+              <h2>Links</h2>
+              <p><a href="https://www.youtube.com">Youtube</a></p>          
+            </div>
+        </div>
+    </div>
+
+      
   </body>
 </html>

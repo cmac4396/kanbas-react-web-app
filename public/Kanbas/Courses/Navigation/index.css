@@ -1,0 +1,38 @@
+.wd-course-nav {
+    background-color: white;
+    padding: 24px 12px 4.5rem 24px;
+    width: 200px;
+}   
+.wd-navigation {
+    list-style: none;
+    width: 160px;
+    padding: 0px;
+}
+.wd-navigation li {
+    padding: 8px 0 8px 6px;
+}
+.wd-navigation li.wd-active {
+    border-left: 2px solid black;
+    font-weight: bold;
+    padding-left: 4px;
+}
+.wd-navigation li.wd-active a {
+    color: black;
+}
+.wd-navigation a {
+    color: #b52828;
+    text-decoration: none;
+    line-height: 1.3;
+    word-wrap: break-word;
+}
+.wd-kanbas-courses-nav-term {
+    padding: 0 0 12px 12px; 
+    font-size: 0.7rem;
+    font-style: italic;
+    color: #677179;
+    display: block;
+}
+.wd-navigation li i {
+    float: right;
+    color: #677179;
+}

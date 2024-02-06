@@ -24,144 +24,257 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/Kanbas/styles.css" rel="stylesheet"/>
+    <link href="/Kanbas/Navigation/index.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <title>CS4550 30083 Web Development SEC 01 Spring 2024 [BOS-1-TR]</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/Kanbas/styles.css" rel="stylesheet"/>
+    <link href="/Kanbas/Navigation/index.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
     <title>React App</title>
   </head>
   <body>
-    <table>
-        <tbody>
-          <tr>
-            <td>
-                <ul>
-                    <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                   <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                  </ul>
-            </td>
-            <td>
-                <ul>
-                    <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                    <li><a href="#">Modules</a></li>
-                    <li><a href="#">Piazza</a></li>
-                    <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="#">Settings</a></li>
-                  </ul>
-            </td>
-            <td>
-                <form>
-                    <select id="edit-assignments-options">
-                        <option value="speed-grader" selected>SpeedGrader</option>
-                    </select>
-                    <hr>
-                    <label for="assignment-name"><h1>Assignment Name</h1></label>
-                    <input type="text" id="assignment-name" value="A1 - ENV + HTML"/>
-                    <br/>
-                    <br/>
-                    <textarea>This is the assignment description.</textarea>
-                    <br/>
-                    <br/>
-                    <label for="points">Points</label>
-                    <br/>
-                    <input type="text" id="points" value="100"/>
-                    <br/>
-                    <br/>
-                    <label for="select-assignment-group">Assignment Group</label>
-                    <br/>
-                    <select id="select-assignment-group">
-                        <option value="assignments">ASSIGNMENTS</option>
-                        <option value="quizzes">QUIZZES</option>
-                        <option value="exams">EXAMS</option>
-                        <option value="projects">PROJECTS</option>
-                    </select>
-                    <br/>
-                    <br/>
-                    <label for="select-display-grades">Display Grade as</label>
-                    <br/>
-                    <select id="select-display-grades">
-                        <option value="percentage">Percentage</option>
-                    </select>
-                    <br/>
-                    <br/>
-                    <label for="select-submission-type">Submission Type</label>
-                    <br/>
-                    <select id="select-submission-type">
-                        <option value="online">Online</option>
-                    </select>
-                    <br/>
-                    <br/>
-                    <label>Online Entry Options</label>
-                    <br/>
-                    <input type="checkbox" value="text-entry" 
-                        name="checkbox-online-entry" id="checkbox-text-entry"/>
-                    <label for="checkbox-text-entry">Text Entry</label>    
-                    <br/>
-                    <input type="checkbox" value="website-url" 
-                        name="checkbox-online-entry" id="checkbox-website-url"/>
-                    <label for="checkbox-website-url">Website URL</label>    
-                    <br/>
-                    <input type="checkbox" value="media-recordings" 
-                        name="checkbox-online-entry" id="checkbox-media-recordings"/>
-                    <label for="checkbox-media-recordings">Media Recordings</label>    
-                    <br/>
-                    <input type="checkbox" value="student-annotation" 
-                        name="checkbox-online-entry" id="checkbox-student-annotation"/>
-                    <label for="checkbox-student-annotation">Student Annotation</label>    
-                    <br/>
-                    <input type="checkbox" value="file-uploads" 
-                        name="checkbox-online-entry" id="checkbox-file-uploads"/>
-                    <label for="checkbox-file-uploads">File Uploads</label>    
-                    <br/>
-                    <br/>
-                    Assign
-                    <br/>
-                    <label for="assign-to">Assign to</label>
-                    <br/>
-                    <input type="text" id="assign-to" value="Everyone"/>
-                    <br/>
-                    <br/>
-                    <label for="due-date">Due</label>
-                    <br/>
-                    <input type="date" id="due-date" value="2021-01-01"/>
-                    <br/>
-                    <br/>
-                    <label for="date-available-from">Available from</label>
-                    <br/>
-                    <input type="date" id="date-available-from" value="2021-01-01"/>
-                    <br/>
-                    <br/>
-                    <label for="date-available-until">Until</label>
-                    <br/>
-                    <input type="date" id="date-available-until" value="2021-01-01"/>
-                    <br/>
-                    <br/>
-                </form>
-                <a href="/Kanbas/Courses/Assignments/screen.html">
-                    <button type="button">Cancel</button>
-                </a>
-                <a href="/Kanbas/Courses/Assignments/screen.html">
-                    <button type="button">Save</button>
-                </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="sidenav wd-kanbas-sidenav">
+        <ul class="wd-kanbas-navigation">
+            <li>
+              <a href="http://northeastern.edu">
+                <img src="/Kanbas/Navigation/Northeastern-University-Logo.png"
+                  class="wd-kanbas-navigation-icon">
+              </a>
+            </li>
+            <li>
+              <a href="/Kanbas/Account/Profile/screen.html">
+                <div class="container wd-kanbas-navigation-account-icon">
+                  <img src="/Kanbas/Navigation/profile-icon.jpeg" class="wd-kanbas-navigation-profile">
+                  <i class="fa-regular fa-circle "></i>
+                </div>
+                Account
+              </a>
+            </li>
+            <li>
+              <a href="/Kanbas/Dashboard/screen.html">
+                <i class="fa fa-tachometer"></i> Dashboard</a>
+            </li>
+            <li class="wd-active">
+              <a href="/Kanbas/Courses/Home/screen.html">
+                <i class="fa-solid fa-book"></i>
+                Courses
+              </a>
+            </li>
+            <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+            <li><a href="#"><i class="fa-solid fa-inbox"></i> Inbox</a></li>
+            <li><a href="#"><i class="fa-regular fa-clock"></i> History</a></li>
+            <li><a href="#"><i class="fa-solid fa-display"></i> Studio</a></li>
+            <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Commons</a></li>
+            <li><a href="#"><i class="fa-regular fa-circle-question"></i><br/> Help</a></li>
+          </ul>
+    </div>
+    <div class="main">
+        <div class="row">
+          <div class="wd-course-nav">
+            <span class="wd-kanbas-courses-nav-term ellipsis">202430_1 Spring 2024 Semester Full Term</span>
+            <nav>
+                <ul class="wd-navigation">
+                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li>
+                    <a href="#">
+                    Discussions
+                    <i class="fa-regular fa-eye-slash"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    Announcements
+                    <i class="fa-regular fa-eye-slash"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    Pages
+                    <i class="fa-regular fa-eye-slash"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    Files
+                    <i class="fa-regular fa-eye-slash"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    Rubrics
+                    <i class="fa-regular fa-eye-slash"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    Outcomes
+                    <i class="fa-regular fa-eye-slash"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    Collaborations
+                    <i class="fa-regular fa-eye-slash"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    Syllabus
+                    <i class="fa-regular fa-eye-slash"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    Settings
+                    <i class="fa-regular fa-eye-slash"></i>
+                    </a>
+                </li>
+                </ul>
+            </nav>
+        </div>
+            <div class="col-6">
+              <form>
+                <select id="edit-assignments-options">
+                    <option value="speed-grader" selected>SpeedGrader</option>
+                </select>
+                <hr>
+                <label for="assignment-name"><h1>Assignment Name</h1></label>
+                <input type="text" id="assignment-name" value="A1 - ENV + HTML"/>
+                <br/>
+                <br/>
+                <textarea>This is the assignment description.</textarea>
+                <br/>
+                <br/>
+                <label for="points">Points</label>
+                <br/>
+                <input type="text" id="points" value="100"/>
+                <br/>
+                <br/>
+                <label for="select-assignment-group">Assignment Group</label>
+                <br/>
+                <select id="select-assignment-group">
+                    <option value="assignments">ASSIGNMENTS</option>
+                    <option value="quizzes">QUIZZES</option>
+                    <option value="exams">EXAMS</option>
+                    <option value="projects">PROJECTS</option>
+                </select>
+                <br/>
+                <br/>
+                <label for="select-display-grades">Display Grade as</label>
+                <br/>
+                <select id="select-display-grades">
+                    <option value="percentage">Percentage</option>
+                </select>
+                <br/>
+                <br/>
+                <label for="select-submission-type">Submission Type</label>
+                <br/>
+                <select id="select-submission-type">
+                    <option value="online">Online</option>
+                </select>
+                <br/>
+                <br/>
+                <label>Online Entry Options</label>
+                <br/>
+                <input type="checkbox" value="text-entry" 
+                    name="checkbox-online-entry" id="checkbox-text-entry"/>
+                <label for="checkbox-text-entry">Text Entry</label>    
+                <br/>
+                <input type="checkbox" value="website-url" 
+                    name="checkbox-online-entry" id="checkbox-website-url"/>
+                <label for="checkbox-website-url">Website URL</label>    
+                <br/>
+                <input type="checkbox" value="media-recordings" 
+                    name="checkbox-online-entry" id="checkbox-media-recordings"/>
+                <label for="checkbox-media-recordings">Media Recordings</label>    
+                <br/>
+                <input type="checkbox" value="student-annotation" 
+                    name="checkbox-online-entry" id="checkbox-student-annotation"/>
+                <label for="checkbox-student-annotation">Student Annotation</label>    
+                <br/>
+                <input type="checkbox" value="file-uploads" 
+                    name="checkbox-online-entry" id="checkbox-file-uploads"/>
+                <label for="checkbox-file-uploads">File Uploads</label>    
+                <br/>
+                <br/>
+                Assign
+                <br/>
+                <label for="assign-to">Assign to</label>
+                <br/>
+                <input type="text" id="assign-to" value="Everyone"/>
+                <br/>
+                <br/>
+                <label for="due-date">Due</label>
+                <br/>
+                <input type="date" id="due-date" value="2021-01-01"/>
+                <br/>
+                <br/>
+                <label for="date-available-from">Available from</label>
+                <br/>
+                <input type="date" id="date-available-from" value="2021-01-01"/>
+                <br/>
+                <br/>
+                <label for="date-available-until">Until</label>
+                <br/>
+                <input type="date" id="date-available-until" value="2021-01-01"/>
+                <br/>
+                <br/>
+            </form>
+            <a href="/Kanbas/Courses/Assignments/screen.html">
+                <button type="button">Cancel</button>
+            </a>
+            <a href="/Kanbas/Courses/Assignments/screen.html">
+                <button type="button">Save</button>
+            </a>
+            </div>
+        </div>
+    </div>
+
+      
+  </body>
+</html>
+
+
   </body>
 </html>
