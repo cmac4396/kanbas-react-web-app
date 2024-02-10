@@ -1,0 +1,146 @@
+.wd-kanbas-navigation {
+    background-color: black;
+    list-style: none;
+    padding: 0px;  margin: 0px;
+    width: 80px;
+    height: 100%;
+  }
+  .wd-kanbas-navigation li {
+    padding: 10px;     margin-bottom: 10px;
+    font-size: 0.8em;  text-align: center;
+  }
+  .wd-kanbas-navigation li.wd-active {
+    background-color: white;
+  }
+  .wd-kanbas-navigation li.wd-active a {
+    color: #d41b2c;
+  }
+  .wd-kanbas-navigation a {
+    color: white;
+    text-decoration: none;
+  }
+  .wd-kanbas-navigation a i {
+    color: #d41b2c;
+    font-size: 2em;
+    margin-bottom: 5px;
+  }
+.wd-kanbas-navigation-icon {
+    width: 70%;
+    height: 70%;
+}
+.wd-kanbas-navigation-account-icon {
+    justify-content: center;
+}
+.wd-kanbas-navigation-account-icon img {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    top: 23px;
+    border-radius: 50%;
+}
+.wd-kanbas-navigation-account-icon .fa-circle {
+    color: white;
+    z-index: 1;
+}
+.wd-kanbas-sidenav {
+    height: 100%;
+    position: fixed;
+    display: block;
+}
+.main {
+    margin-left: 80px;
+}
+.main > .d-flex {
+  flex: 1 0 auto;
+  position: relative;
+
+}
+@media (max-width:768px) {
+  .main {
+    margin: 0px;
+  }
+}
+.wd-kanbas-nav-mobile .fa-user {
+  color: #c7cdd1;
+}
+
+.wd-kanbas-nav-mobile > .sidenav > li > a {
+  margin-top: 0px;
+  padding: 0px;
+}
+.wd-kanbas-nav-mobile-header-close > button:hover {
+  background: #f5f5f5;
+}
+.wd-kanbas-nav-mobile-header-info {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.wd-kanbas-nav-mobile > .sidenav > ul {
+  margin: 0 0 6px 26px;
+  padding: 0px;
+  list-style: none;
+}
+
+.wd-kanbas-nav-mobile > .sidenav > ul > li {
+  margin-top: 1rem;
+  padding: 0px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.wd-kanbas-nav-mobile {
+  width: 100vw;
+  min-height: 100vw;
+  background-color: white;
+  z-index: 100;
+  position: fixed;
+}
+
+.wd-kanbas-nav-mobile > .sidenav {
+  padding: 1.5rem 2.25rem 1.5rem 1.5rem;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.wd-kanbas-nav-mobile-header {
+  margin: 0px 0px 2.25rem;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  justify-content: flex-start;
+}
+
+.wd-kanbas-nav-mobile-header-close {
+  min-width: 0.07rem;
+  flex-shrink: 0;
+}
+.wd-kanbas-nav-mobile-header-close > button {
+  background:white;
+  border-radius: 0.25rem;
+  border: 0px;
+  display: inline-block;
+  vertical-align: middle;
+  color: rgb(45, 59, 69);
+}
+
+.wd-nav-mobile-header {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+  height: 80px;
+  overflow: hidden;
+  min-width: 100vw;
+}
+
+.wd-nav-mobile-header button {
+  background: black;
+  color: white;
+  border: 0px;
+}
+
+
+

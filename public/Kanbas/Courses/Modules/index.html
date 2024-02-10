@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/Kanbas/styles.css" rel="stylesheet"/>
+    <link href="/Kanbas/Navigation/index.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <title>React App</title>
+  </head>
+  <body>
+
+    <div class="wd-course-modules">
+        <div class="wd-course-modules-header">
+            <div>
+                <div>
+                    <button class="btn" type="button">Collapse All</button>
+                    <button class="btn"type="button">View Progress</button>
+                    <button class="btn dropdown-toggle" type="button" id="publish-all" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa-regular fa-circle-check"></i>
+                        Publish All 
+                    </button>
+                    <button class="btn wd-btn-special" type="button">
+                        <i class="fa-solid fa-plus"></i>
+                        Module
+                    </button>
+                    <button class="btn" type="button">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <hr/>
+            <ul class="list-group wd-modules">
+                <li>
+                  <div class="wd-module-header">
+                    <span class="ellipsis">
+                        <i class="fa fa-ellipsis-v"></i>
+                        Week 1 - Course Introduction, Syllabus, Agenda, Internet, Web, HTML, Assignment 1
+                    </span> 
+                    <div>
+                        <button class="dropdown-toggle">
+                            <i class="fa fa-check-circle text-success"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <i class="fa fa-plus ms-2"></i>
+                    </div>
+                    <div>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </div>
+                  </div>
+                <ul class="wd-module-items">
+                    <li class="list-group-item">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> LEARNING OBJECTIVES
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> 
+                                <span class="wd-module-item-row-indent">
+                                    Introduction to the course
+                                </span>
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> 
+                                <span class="wd-module-item-row-indent">
+                                    Learn what is Web Development
+                                </span>
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> 
+                                <span class="wd-module-item-row-indent">
+                                    Creating a development environment
+                                </span>
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> 
+                                <span class="wd-module-item-row-indent">
+                                    Creating a Web Application
+                                </span>
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> 
+                                <span class="wd-module-item-row-indent">
+                                    Getting started with the 1st assignment 
+                                </span>
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> READING
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> 
+                                <span class="wd-module-item-row-indent">
+                                    Full Stack Developer - Chapter 1 - Introduction
+                                </span>
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item ">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> 
+                                <span class="wd-module-item-row-indent">
+                                    Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML
+                                </span>
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> SLIDES
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> 
+                                <span>
+                                    <i class="fa-solid fa-link"></i>
+                                </span>
+                                <a href="#">
+                                    Introduction to Web Development
+                                    <i class="fa-solid fa-file-export"></i>
+                                </a>
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> 
+                                <span>
+                                    <i class="fa-solid fa-link"></i>
+                                </span>
+                                <a href="#">
+                                    Creating an HTTP server with Node.js
+                                    <i class="fa-solid fa-file-export"></i>
+                                </a>
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> 
+                                <span>
+                                    <i class="fa-solid fa-link"></i>
+                                </span>
+                                <a href="#">
+                                    Creating a React Application
+                                    <i class="fa-solid fa-file-export"></i>
+                                </a>
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> 
+                                <span>
+                                    <i class="fa-solid fa-link"></i>
+                                </span>
+                                <a href="#">
+                                    Commit your source to GitHub.com
+                                    <i class="fa-solid fa-file-export"></i>
+                                </a>
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> 
+                                <span>
+                                    <i class="fa-solid fa-link"></i>
+                                </span>
+                                <a href="#">
+                                    Deploying to Netlify
+                                    <i class="fa-solid fa-file-export"></i>
+                                </a>
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> 
+                                <span>
+                                    <i class="fa-solid fa-link"></i>
+                                </span>
+                                <a href="#">
+                                    Deploying multiple branches in Netlify
+                                    <i class="fa-solid fa-file-export"></i>
+                                </a>
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                </li>
+                <li>
+                    <div class="wd-module-header">
+                      <span class="ellipsis">
+                          <i class="fa fa-ellipsis-v"></i>
+                          Week 2 - Formatting User Interfaces with HTML
+                      </span> 
+                      <div>
+                          <button class="dropdown-toggle">
+                              <i class="fa fa-check-circle text-success"></i>
+                          </button>
+                      </div>
+                      <div>
+                          <i class="fa fa-plus ms-2"></i>
+                      </div>
+                      <div>
+                          <i class="fa fa-ellipsis-v ms-2"></i>
+                      </div>
+                    </div>
+                  <ul class="wd-module-items">
+                      <li class="list-group-item">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> LEARNING OBJECTIVES
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item ">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> 
+                                  <span class="wd-module-item-row-indent">
+                                      Learn how to create user interfaces with HTML
+                                  </span>
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item ">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> 
+                                  <span class="wd-module-item-row-indent">
+                                      Keep working on assignment 1
+                                  </span>
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item ">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> 
+                                  <span class="wd-module-item-row-indent">
+                                      Deploy the assignment to Netlify
+                                  </span>
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item ">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> 
+                                  <span class="wd-module-item-row-indent">
+                                      Creating a Web Application
+                                  </span>
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> READING
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item ">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> 
+                                  <span class="wd-module-item-row-indent">
+                                      Full Stack Developer - Chapter 1 - Introduction
+                                  </span>
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item ">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> 
+                                  <span class="wd-module-item-row-indent">
+                                      Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML
+                                  </span>
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> SLIDES
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> 
+                                  <span>
+                                      <i class="fa-solid fa-link"></i>
+                                  </span>
+                                  <a href="#">
+                                      Introduction to HTML and the DOM
+                                      <i class="fa-solid fa-file-export"></i>
+                                  </a>
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> 
+                                  <span>
+                                      <i class="fa-solid fa-link"></i>
+                                  </span>
+                                  <a href="#">
+                                      Formatting Web content with Headings and Paragraphs
+                                      <i class="fa-solid fa-file-export"></i>
+                                  </a>
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> 
+                                  <span>
+                                      <i class="fa-solid fa-link"></i>
+                                  </span>
+                                  <a href="#">
+                                      Formatting content with Lists and Tables
+                                      <i class="fa-solid fa-file-export"></i>
+                                  </a>
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> 
+                                  <span>
+                                      <i class="fa-solid fa-link"></i>
+                                  </span>
+                                  <a href="#">
+                                      Creating Web Forms
+                                      <i class="fa-solid fa-file-export"></i>
+                                  </a>
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> 
+                                  <span>
+                                      <i class="fa-solid fa-link"></i>
+                                  </span>
+                                  <a href="#">
+                                      Navigating with Anchors
+                                      <i class="fa-solid fa-file-export"></i>
+                                  </a>
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          <div class="wd-module-item-row">
+                              <div class="wd-module-item-info">
+                                  <i class="fa fa-ellipsis-v"></i> 
+                                  <span>
+                                      <i class="fa-solid fa-link"></i>
+                                  </span>
+                                  <a href="#">
+                                      Embedding content with Iframes
+                                      <i class="fa-solid fa-file-export"></i>
+                                  </a>
+                              </div>
+                              <div class="wd-module-item-icons-right">
+                                  <i class="fa fa-check-circle text-success"></i>
+                                  <i class="fa fa-ellipsis-v ms-2"></i>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="wd-module-item-row">
+                            <div class="wd-module-item-info">
+                                <i class="fa fa-ellipsis-v"></i> 
+                                <span>
+                                    <i class="fa-solid fa-link"></i>
+                                </span>
+                                <a href="#">
+                                    Drawing with Scalable Vector Graphics
+                                    <i class="fa-solid fa-file-export"></i>
+                                </a>
+                            </div>
+                            <div class="wd-module-item-icons-right">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </div>
+                        </div>
+                    </li>
+                  </ul>
+                  </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <hr/>
+
+    
+  
+  </body>
+</html>

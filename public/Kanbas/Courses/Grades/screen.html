@@ -24,48 +24,327 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/Kanbas/styles.css" rel="stylesheet"/>
+    <link href="/Kanbas/Navigation/index.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" /> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Grades for Jose Annunziatio: CS4550 30083 Web Development SEC 01 Spring 2024 [BOS-1-TR]</title>
   </head>
   <body>
-    <table>
-        <tbody>
-          <tr>
-            <td>
+    <div class="sidenav wd-kanbas-sidenav d-none d-md-block">
+        <ul class="wd-kanbas-navigation">
+            <li>
+              <a href="http://northeastern.edu">
+                <img src="/Kanbas/Navigation/Northeastern-University-Logo.png"
+                  class="wd-kanbas-navigation-icon">
+              </a>
+            </li>
+            <li>
+              <a href="/Kanbas/Account/Profile/screen.html">
+                <div class="container wd-kanbas-navigation-account-icon">
+                  <img src="/Kanbas/Navigation/profile-icon.jpeg" class="wd-kanbas-navigation-profile">
+                  <i class="fa-regular fa-circle "></i>
+                </div>
+                Account
+              </a>
+            </li>
+            <li>
+              <a href="/Kanbas/Dashboard/screen.html">
+                <i class="fa fa-tachometer"></i> Dashboard</a>
+            </li>
+            <li class="wd-active">
+              <a href="/Kanbas/Courses/Home/screen.html">
+                <i class="fa-solid fa-book"></i>
+                Courses
+              </a>
+            </li>
+            <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+            <li><a href="#"><i class="fa-solid fa-inbox"></i> Inbox</a></li>
+            <li><a href="#"><i class="fa-regular fa-clock"></i> History</a></li>
+            <li><a href="#"><i class="fa-solid fa-display"></i> Studio</a></li>
+            <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Commons</a></li>
+            <li><a href="#"><i class="fa-regular fa-circle-question"></i><br/> Help</a></li>
+          </ul>
+    </div>
+    <div class="collapse collapse-horizontal wd-kanbas-nav-mobile mobile-kanbas-nav-collapse" id="wd-kanbas-nav-mobile" >
+        <div class="sidenav">
+            <span class="wd-kanbas-nav-mobile-header">
+                <span class="wd-kanbas-nav-mobile-header-info">
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <img src="/images/mobile-logo.png">
+                    </a>
+                </span>
+                <span class="wd-kanbas-nav-mobile-header-close">
+                    <button data-bs-toggle="collapse" data-bs-target=".mobile-kanbas-nav-collapse" aria-expanded="false" aria-controls=".mobile-kanbas-nav-collapse">
+                        <i class="fa-solid fa-2x fa-xmark"></i>
+                    </button>
+                </span>
+            </span>
+            <ul>
+                <li>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                      <i class="fa fa-tachometer"></i> Dashboard</a>
+                  </li>
+                <li>
+                  <a href="/Kanbas/Account/Profile/screen.html">
+                      <i class="fa-solid fa-user"></i>
+                    Account
+                  </a>
+                </li>
+                <li>
+                  <a href="/Kanbas/Courses/Home/screen.html">
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                  </a>
+                </li>
+                <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+                <li><a href="#"><i class="fa-solid fa-inbox"></i> Inbox</a></li>
+                <li><a href="#"><i class="fa-regular fa-clock"></i> History</a></li>
+                <li><a href="#"><i class="fa-solid fa-display"></i> Studio</a></li>
+                <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Commons</a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-question"></i> Help</a></li>
+              </ul> 
+        </div>
+    </div>
+    <div class= "wd-nav-mobile-header d-flex d-md-none collapse show mobile-kanbas-nav-collapse">
+        <button data-bs-toggle="collapse" data-bs-target=".mobile-kanbas-nav-collapse" aria-expanded="false" aria-controls=".mobile-kanbas-nav-collapse">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="wd-course-nav-mobile" data-bs-toggle="collapse" data-bs-target=".mobile-course-nav-collapse" aria-expanded="false" aria-controls=".mobile-course-nav-collapse">
+            <div>CS4550.30083.202430</div>
+            <div>Jose Annunziato</div>
+        </a>
+        <button data-bs-toggle="collapse" data-bs-target=".mobile-course-nav-collapse" aria-expanded="false" aria-controls=".mobile-course-nav-collapse">
+            <i class="fa-solid fa-chevron-down collapse show mobile-course-nav-collapse"></i>
+            <i class="fa-solid fa-xmark collapse mobile-course-nav-collapse"></i>
+        </button>  
+    </div>
+    <nav class= "wd-course-nav-mobile collapse mobile-course-nav-collapse d-md-none">
+        <span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="/Kanbas/Courses/Home/screen.html">
+                    <i class="fa-solid fa-house"></i>
+                  Home
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="/Kanbas/Courses/Modules/screen.html">
+                    <i class="fa-solid fa-diagram-project"></i>
+                  Modules
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-plug"></i>
+                  Piazza
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-plug"></i>
+                  Zoom Meetings
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="/Kanbas/Courses/Assignments/screen.html">
+                    <i class="fa-solid fa-file-pen"></i>
+                  Assignments
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="">
+                    <i class="fa-solid fa-rocket"></i>
+                  Quizzes
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option wd-active">
+                <a href="/Kanbas/Courses/Grades/screen.html">
+                    <i class="fa-solid fa-book"></i>
+                  Grades
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-users"></i>
+                  People
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                  Panopto Video
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-comments"></i>
+                  Discussion
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-bullhorn"></i>
+                  Announcements
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-newspaper"></i>
+                  Pages
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-regular fa-folder"></i>
+                  Files
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-table"></i>
+                  Rubrics
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-regular fa-comment-dots"></i>
+                  Outcomes
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-regular fa-comment"></i>
+                  Collaborations
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-receipt"></i>
+                  Syllabus
+                  <i class="fa-regular fa-eye-slash"></i>
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-plug"></i>
+                  Progress Reports (EAB Navigate)
+                </a>
+            </span>
+            <span class="wd-course-nav-mobile-option">
+                <a href="#">
+                    <i class="fa-solid fa-sliders"></i>
+                  Settings
+                </a>
+            </span>
+        </span>
+    </nav>
+    
+    <div class="main collapse show mobile-kanbas-nav-collapse">
+        <div class= "wd-course-content-header d-none d-md-flex">
+            <button data-bs-toggle="collapse" data-bs-target="#wd-course-nav" aria-expanded="false" aria-controls="#wd-course-nav">
+                <i class="fa-solid fa-2x fa-bars"></i>
+            </button>
+            <div class="wd-course-nav-crumbs">
                 <ul>
-                    <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                   <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                  </ul>
-            </td>
-            <td>
-                <ul>
+                    <li>
+                        <a class="wd-emph-href" href="/Kanbas/Courses/Home/screen.html">CS4550.30083.202430</a>
+                    </li>
+                    >
+                    <li>
+                        <a class="wd-emph-href" href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+                    </li>
+                    > Jose Annunziato
+                </ul>
+            </div>
+            <div>
+                <button class="btn">
+                    <i class="fa-solid fa-glasses"></i>
+                    Student View
+                </button>
+            </div>
+        </div>
+        <div class="d-block d-md-flex">
+            <div class="wd-course-nav collapse collapse-horizontal d-none d-md-block show" id="wd-course-nav">
+                <span class="wd-kanbas-courses-nav-term ellipsis">202430_1 Spring 2024 Semester Full Term</span>
+                <nav>
+                    <ul class="wd-navigation">
                     <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                    <li><a href="#">Modules</a></li>
+                    <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
                     <li><a href="#">Piazza</a></li>
                     <li><a href="#">Zoom Meetings</a></li>
                     <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
                     <li><a href="#">Quizzes</a></li>
-                    <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                    <li class="wd-active"><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
                     <li><a href="#">People</a></li>
                     <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="#">Settings</a></li>
-                  </ul>
-            </td>
-            <td>
+                    <li>
+                        <a href="#">
+                        Discussions
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Announcements
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Pages
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Files
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Rubrics
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Outcomes
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Collaborations
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Syllabus
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Settings
+                        <i class="fa-regular fa-eye-slash"></i>
+                        </a>
+                    </li>
+                    </ul>
+                </nav>
+                </div>
+            <div class="flex-fill wd-course-main-content">
                 <select id="gradebook">
                     <option value="gradebook">Gradebook</option>
                 </select>
@@ -270,10 +549,100 @@
                         <td>99</td>
                     </tr>
                   </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+            </div>
+            <div class="flex-grow-0 me-2 d-none d-lg-block wd-course-secondary-content ">
+                <div>
+                    <h2>Course Status</h2>
+                    <div class="row wd-publish-status">
+                        <button class="btn col-6"><i class="fa-solid fa-ban"></i> Unpublish</button>
+                        <button class="btn wd-btn-green col-6"><i class="fa fa-check-circle"></i> Published</button>
+                    </div>
+                    <button class="btn wd-btn-span"><i class="fa-solid fa-file-import"></i> Import Existing Content</button>
+                    <button class="btn wd-btn-span"><i class="fa-solid fa-right-from-bracket"></i> Import from Commons</button>
+                    <button class="btn wd-btn-span"><i class="fa-solid fa-globe"></i> Choose Course Home Page</button>
+                    <button class="btn wd-btn-span"><i class="fa-solid fa-chart-simple"></i> View Course Stream</button>
+                    <button class="btn wd-btn-span"><i class="fa-solid fa-bullhorn"></i> New Announcement</button>
+                    <button class="btn wd-btn-span"><i class="fa-solid fa-chart-simple"></i> New Analytics</button>
+                    <button class="btn wd-btn-span"><i class="fa-regular fa-bell"></i> View Course Notifications</button>
+                    <div class="wd-course-todo-list">
+                        <h2><span>To Do</span></h2>
+                        <ul>
+                            <li>
+                                <div class="wd-course-todo-item">
+                                    <i class="fa-solid fa-1"></i>
+                                    <div class="wd-course-todo-item-info">
+                                        <div class="wd-course-todo-item-title">
+                                            <a href="#">Grade A1 - ENV + HTML</a>
+                                        </div>
+                                        <div class="wd-course-todo-item-info-list">
+                                            300 Points • Sep 18 at 11:59pm
+                                        </div>
+                                    </div>
+                                    <div class="wd-course-todo-item-close">
+                                        <span>
+                                            <button>
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wd-course-todo-list">
+                        <h2><span>Coming Up</span></h2>
+                        <ul>
+                            <li>
+                                <div class="wd-course-todo-item">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <div class="wd-course-todo-item-info">
+                                        <div class="wd-course-todo-item-title">
+                                            <a href="#">Lecture</a>
+                                        </div>
+                                        <div class="wd-course-todo-item-info-list wd-course-todo-item-subtitle">
+                                            CS4550.12621.202430
+                                        </div>
+                                        <div class="wd-course-todo-item-info-list">
+                                            300 Points • Sep 18 at 11:59pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wd-course-todo-item">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <div class="wd-course-todo-item-info">
+                                        <div class="wd-course-todo-item-title">
+                                            <a href="#">CS5610 06 SP23 Lecture</a>
+                                        </div>
+                                        <div class="wd-course-todo-item-info-list wd-course-todo-item-subtitle">
+                                            CS4550.126241.202430
+                                        </div>
+                                        <div class="wd-course-todo-item-info-list">
+                                            Sep 11 at 6pm
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wd-course-todo-item">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <div class="wd-course-todo-item-info">
+                                        <div class="wd-course-todo-item-title">
+                                            <a href="#">CS5610 Web Development Summer 1 2023 - LECTURE</a>
+                                        </div>
+                                        <div class="wd-course-todo-item-info-list wd-course-todo-item-subtitle">
+                                            CS4550.126241.202430
+                                        </div>
+                                        <div class="wd-course-todo-item-info-list">
+                                            Sep 11 at 7pm
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
       
   </body>
 </html>
