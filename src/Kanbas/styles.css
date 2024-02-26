@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wd-kanbas-container {
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+}
+
+.main {
+  background-color: white;
+  display: block;
+  flex-direction: column;
+  margin: 0px;
+  flex: 1 0 auto;
+  position: relative;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
+  line-height: 1.5;
+}
+
+.row {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #b52828;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.fa-eye-slash {
+  color: #c7cdd1;
+}
+
+.wd-course-main-content {
+  padding: 36px 48px 48px 48px;
+}
+
+.wd-course-nav-mobile {
+  padding: 16px;
+  flex-grow: 1;
+  display: block;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
