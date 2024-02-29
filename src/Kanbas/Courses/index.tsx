@@ -10,7 +10,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
-function Courses() {
+import { CourseType } from "../../Kanbas/Database";
+function Courses({ courses } : { courses: CourseType[]}) {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
   return (
