@@ -1,5 +1,9 @@
+.wd-modules :not(ul, li, div) {
+  margin: 3px;
+}
+
 .wd-modules,
-.wd-modules * {
+.wd-modules :is(ul, li) {
   border-radius: 0%;
   border: none;
   margin: 0px;
