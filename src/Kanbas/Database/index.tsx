@@ -11,6 +11,21 @@ export type CourseType = {
   image?: string | undefined
 }
 
+export type ModuleLesson = {
+  _id: string,
+  name: string,
+  description: string,
+  module: string
+}
+
+export type ModuleType = {
+  _id:string, 
+  name:string, 
+  description: string, 
+  course: string,
+  lessons?: ModuleLesson[] | undefined
+}
+
 export interface DB {
   courses: CourseType[];
   modules: object;
